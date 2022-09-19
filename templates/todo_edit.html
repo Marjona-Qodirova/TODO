@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Taxrirlash</title>
+</head>
+<body>
+    <br>
+    <hr>
+    <h2> Taxrirlash</h2>
+    <br>
+    <br>
+
+    <form method="post" action="/rejalar_edit/{{ plan.id }}" >{% csrf_token %}
+        <input type="text" name="s_v" placeholder="sarlavha" >
+        <input type="text" name="b" placeholder="batafsil" >
+        <input type="date" name="s" placeholder="sana" >
+        <input type="checkbox" name="b_n" placeholder="bajarilmagan" >
+        <button type="submit"> Saqlash</button>
+
+    </form>
+</body>
+</html>
